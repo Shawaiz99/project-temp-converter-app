@@ -8,7 +8,41 @@
     <title>Converter App</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" class="container">
+      <h1 class="text-center mb-4">Temperature Converter</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="converterForm">
+            <!-- Input for Numbers -->
+            <div class="mb-3">
+              <label for="tempValue" class="form-label">Value</label>
+              <input
+                type="number"
+                class="form-control"
+                id="tempValue"
+                placeholder="Enter Temperature!"
+              />
+            </div>
+            <!-- Input for type converstion -->
+            <div class="mb-3">
+              <label for="tempType" class="form-label">From:</label>
+              <select id="tempType" class="form-select">
+                <option value="c2f">Celsius to Fahrenheit</option>
+                <option value="f2c">Farenheit to Celsius</option>
+              </select>
+            </div>
+             <!--Submit Button  -->
+             <div class="mt-3">
+              <button type="submit" class="btn btn-primary w-100">Convert</button>
+             </div>
+          </form>
+          <div class="mt-5">
+            <h1 id="result" class="text-center text-success">-40C == -40F</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
