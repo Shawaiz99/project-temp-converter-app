@@ -19,3 +19,23 @@ describe('celsiusToFahrenheit tests', ()=> {
         expect(celsiusToFahrenheit(-40)).toBe(-40);
     });
 });
+
+describe('fahrenheitToCelsius tests', ()=> {
+    /* Just did the inverse to make things easier of Celsius*/
+
+    it('should convert 32F to 0C', () => {
+        expect(fahrenheitToCelsius(32)).toBe(0);
+    });
+    
+    it('should convert 212F to 100C', () => {
+        expect(fahrenheitToCelsius(212)).toBe(100);
+    });
+    
+    it('should convert 77F as String to "25C"', () => {
+        expect(fahrenheitToCelsius(77)).toBe("25");
+    });
+    
+    it('should convert -40F to -40C', () => {
+        expect(fahrenheitToCelsius(-40)).toBe(-40);
+    });
+});
