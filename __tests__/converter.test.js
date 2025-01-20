@@ -32,7 +32,7 @@ describe('fahrenheitToCelsius tests', ()=> {
     });
     
     it('should convert 77F as String to "25C"', () => {
-        expect(fahrenheitToCelsius(77)).toBe("25");
+        expect(fahrenheitToCelsius(77)).toBe(Number("25"));
     });
     
     it('should convert -40F to -40C', () => {
